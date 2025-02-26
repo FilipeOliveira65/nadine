@@ -1,0 +1,55 @@
+.back {
+    position: relative; 
+    border-radius: 26px;
+    background: #deffe6;
+    box-shadow:  10px -10px 10px -10px #c8e6cf;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    text-align: initial;
+
+    max-width: 80%;
+
+    ul {
+        list-style: none;
+
+        li i {
+            margin: 10px;
+        }
+    }
+}
+
+.final {
+    background: var(--dark-green);
+    margin: auto;
+    max-width: 90%;
+
+    padding: 10px;
+
+    border-radius: 20px;
+
+    ul {
+        list-style: none;
+        
+        
+        li {
+            color: var(--light-green);
+        }
+    }
+
+    h3 {
+        color: #fff;
+    }
+
+    .call {
+        background: var(--light-green);
+        display: inline;
+        color: var(--dark-green);
+
+        border-radius: 5px;
+
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+}

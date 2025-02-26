@@ -1,0 +1,4 @@
+cor do cabeçalho: #4FBD6B;
+
+sombra do cabeçalho: box-shadow: -5px 5px 30px 5px rgba(0, 0, 0, 0.123);
+
