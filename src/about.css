@@ -25,15 +25,20 @@ header {
   height: 80vh;
   position: relative;
   top: 20px;
-  background-image: url("../Imagens/dr-jessica-nadine-ft-ampla.webp");
+  background-image: url("../public/images/dr-jessica-nadine-ft-ampla.webp");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: initial;
   z-index: -999;
 }
 
 #principal {
   min-height: 50vh;
+  display: flex;
+  align-items: initial;
+  justify-content: initial;
+  flex-direction: column;
   border: 3px solid #000;
   border-radius: 20px 20px 0 0;
   padding: 0;
@@ -108,7 +113,6 @@ header {
   z-index: 999;
 }
 #principal #content #schedule-area #schedule-popup {
-  min-height: 75%;
   width: 500px;
   display: flex;
   align-items: center;
@@ -170,4 +174,30 @@ header {
 }
 #principal #content #schedule-area #schedule-popup #action-buttons #send {
   background-color: #58af6e;
+}
+
+@media screen and (max-width: 960px) {
+  header nav {
+    background-color: #f7d413;
+  }
+  #principal #content {
+    padding: 30px;
+    padding-top: 0;
+    text-align: initial;
+  }
+  #principal #content cite {
+    text-align: initial;
+  }
+  #principal #content #schedule-area #schedule-popup {
+    width: 350px;
+  }
+  #principal #content #schedule-area #schedule-popup h1 {
+    font-size: 20px;
+  }
+  #principal #content #schedule-area #schedule-popup form {
+    width: 90%;
+  }
+  #principal #content #schedule-area #schedule-popup form input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=about.css.map */

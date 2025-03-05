@@ -1,3 +1,16 @@
+// {
+//   var menu = document.getElementById("menu");
+//   var menuContents = document.getElementById("navbar");
+
+//   menu.addEventListener("click", function() {
+//       if (menuContents.style.display === "none") {
+//           menuContents.style.display = "flex";
+//       } else {
+//           menuContents.style.display = "none";
+//       }   
+//   })
+// }
+
 export default function Header() {
     return (
       <header>
@@ -6,15 +19,21 @@ export default function Header() {
             Nadin<span className="rot">e</span>
           </h3>
         </div>
+
+        <div id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
   
-        <nav className="navbar">
-          <ul className="menu active">
+        <nav id="navbar">
+          <ul>
             <li>
               <a href="home.html">Home</a>
             </li>
 
             <li>
-              <a href="about.html">Home</a>
+              <a href="about.html">Sobre</a>
             </li>
           </ul>
         </nav>
