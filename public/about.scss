@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    --dark-green: #58af6e;
+    --light-green: #F0E6D2;
+    --text-color: #383838;
+
+    --primary-color: #f7d413;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--primary-color);
+
+    z-index: 999;
+}
+
+
+
+#photo {
+    width: 100vw;
+    height: 80vh;
+
+    position: relative;
+    top: 20px;
+
+    background-image: url("../public/images/dr-jessica-nadine-ft-ampla.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+
+    z-index: -999;
+}
+
+#principal {
+    min-height: 50vh;
+
+    display: flex;
+    align-items: initial;
+    justify-content: initial;
+    flex-direction: column;
+
+    border: 3px solid #000;
+    border-radius: 20px 20px 0 0;
+
+    padding: 0;
+
+    position: relative;
+
+    background-color: var(--light-green);
+
+    h1 {
+        position: relative;
+        top: -80px;
+
+        font-size: 60px;
+        color: var(--primary-color);
+
+        text-shadow: 3px 1px 0px #000;
+    }
+
+    br {
+        margin: 10px;
+    }
+
+    #content {
+        width: 100%;
+
+        margin: 0;
+        
+        padding: 80px;
+        padding-top: 0;
+
+        text-align: justify;
+
+        strong {
+            background-color: var(--primary-color);
+        }
+
+        cite {
+            height: 100px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 10px;
+
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+
+            border-width: 0px 0 0 5px;
+            border-style: solid;
+            border-color: var(--primary-color);
+        }
+
+        p:last-child {
+            font-weight: bolder;
+        }
+
+        #schedule {
+            height: 50px;
+            width: 200px;
+
+            display: block;
+            margin: 0 auto;
+            margin-top: 40px;
+
+            font-size: 20px;
+            font-family: "Sora", serif;
+            font-weight: 500;
+
+            border: 0px solid;
+            border-radius: 10px;
+
+            background-color: var(--dark-green);
+            color: #fff;
+
+            cursor: pointer;
+
+            transition: all .5s ease-in-out;
+        }
+
+        #schedule:hover {
+            transform: perspective(8deg);
+
+            all: .5s;
+        }
+
+        #schedule-area {
+            height: 100vh;
+            width: 100vw;
+
+            position: fixed;
+            top: 0;
+            right: 0;
+
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+            backdrop-filter: blur(5px);
+
+            z-index: 999;
+
+            #schedule-popup {
+                // min-height: 75%;
+                width: 500px;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                padding: 20px;
+
+                background-color: #237bff;
+
+                border: 3px solid #000;
+                border-radius: 20px;
+
+                h1 {
+                    position: inherit;
+
+                    font-size: 30px;
+
+                    color: #fff;
+                    text-shadow: none;
+                }
+
+                form {
+                    // width: 80%;
+                    min-height: 75%;
+                    max-height: 95%;
+
+                    margin-top: 20px;
+                    padding: 20px;
+
+                    // display: flex;
+                    // align-items: center;
+                    // flex-direction: column;
+
+                    text-align: initial;
+
+                    background-color: #78aeff;
+
+                    border: 0px solid;
+                    border-radius: 20px;
+
+                    input {
+                        height: 40px;
+                        width: 300px;
+
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+
+                        padding: 5px;
+
+                        border-style: none;
+                        border-radius: 10px;
+
+                        outline: #f7d413;
+
+                        font-size: 15px;
+                        font-family: "Sora", serif;
+                    }
+                }
+
+                #action-buttons {
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: center;
+
+                    // margin: 20px;
+                    gap: 15px;
+
+                    box-sizing: border-box;
+
+                    button {
+                        height: 50px;
+                        width: 140px;
+
+                        margin: 20px 10px;
+
+                        font-size: 18px;
+                        font-family: "Sora", serif;
+                        font-weight: bolder;
+
+                        border: 0px solid;
+                        border-radius: 10px;
+
+                        color: #fff;
+
+                        cursor: pointer;
+                    }
+
+                    #cancel {
+                        background-color: #ff2b2b;
+                    }
+
+                    #send {
+                        background-color: #58af6e;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        nav {
+            background-color: #f7d413;
+        }
+    }
+
+    #principal {
+        #content {
+            padding: 30px;
+            padding-top: 0;
+
+            text-align: initial;
+
+            cite {
+                text-align: initial;
+            }
+
+            #schedule-area {
+                #schedule-popup {
+                    width: 350px;
+
+                    h1 {
+                        font-size: 20px;
+                    }
+
+                    form {
+                        width: 90%;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

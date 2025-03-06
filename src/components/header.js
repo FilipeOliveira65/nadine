@@ -11,7 +11,24 @@
 //   })
 // }
 
+import React, {useEffect} from "react";
+
 export default function Header() {
+  useEffect(()  => {
+    var menu = document.getElementById("menu");
+    var menuContents = document.getElementById("navbar");
+    
+    if (menu && menuContents) {
+      menu.addEventListener("click", function() {
+        if (menuContents.style.display === "none") {
+          menuContents.style.display = "flex";
+        } else {
+          menuContents.style.display = "none";
+        }   
+      })
+    }
+  }, [])
+
     return (
       <header>
         <div className="logo">
