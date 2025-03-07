@@ -9,8 +9,6 @@ import ListItem from "./components/list-item";
 import LifeValorization from "./components/cvv";
 import Footer from "./components/footer";
 
-
-
 export default function App() {
   const professionalsInformations = [
     {
