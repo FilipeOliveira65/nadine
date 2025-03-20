@@ -427,11 +427,17 @@ ul {
                 padding: 0;
 
                 li {
-                    margin: 0;
+                    // margin: 0;
+                    margin-bottom: 50px;
+
+                    a {
+                        margin-bottom: 100px;
+                    }
                 }
             }
         }
     }
+
     #principal {
         #content {
             padding: 20px;

@@ -289,7 +289,10 @@ ul {
     padding: 0;
   }
   header nav ul li {
-    margin: 0;
+    margin-bottom: 50px;
+  }
+  header nav ul li a {
+    margin-bottom: 100px;
   }
   #principal #content {
     padding: 20px;

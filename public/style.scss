@@ -428,6 +428,13 @@ ul {
 
                 li {
                     margin: 0;
+                    margin-bottom: 15px;
+
+                    a:hover {
+                        background-color: transparent;
+
+                        color: #fff;
+                    }
                 }
             }
         }

@@ -175,6 +175,17 @@ header {
 #principal #content #schedule-area #schedule-popup #action-buttons #send {
   background-color: #58af6e;
 }
+#principal #content #schedule-area #maintenance-popup {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+}
+#principal #content #schedule-area #maintenance-popup h1 {
+  font-size: 20px;
+}
 
 @media screen and (max-width: 960px) {
   header nav {
@@ -186,7 +197,9 @@ header {
     text-align: initial;
   }
   #principal #content cite {
+    height: 200px;
     text-align: initial;
+    margin: 20px 40px;
   }
   #principal #content #schedule-area #schedule-popup {
     width: 350px;

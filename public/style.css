@@ -290,6 +290,11 @@ ul {
   }
   header nav ul li {
     margin: 0;
+    margin-bottom: 15px;
+  }
+  header nav ul li a:hover {
+    background-color: transparent;
+    color: #fff;
   }
   #principal #content {
     padding: 20px;
