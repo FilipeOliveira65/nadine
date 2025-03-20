@@ -289,10 +289,12 @@ ul {
     padding: 0;
   }
   header nav ul li {
-    margin-bottom: 50px;
+    margin: 0;
+    margin-bottom: 15px;
   }
-  header nav ul li a {
-    margin-bottom: 100px;
+  header nav ul li a:hover {
+    background-color: transparent;
+    color: #fff;
   }
   #principal #content {
     padding: 20px;

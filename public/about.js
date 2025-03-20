@@ -46,6 +46,8 @@ async function sendEmail() {
 
     const result = await response.text();
     console.log(result);
+
+    popup.style.display = "none";
 }
 
 

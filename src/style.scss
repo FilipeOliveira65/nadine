@@ -427,11 +427,13 @@ ul {
                 padding: 0;
 
                 li {
-                    // margin: 0;
-                    margin-bottom: 50px;
+                    margin: 0;
+                    margin-bottom: 15px;
 
-                    a {
-                        margin-bottom: 100px;
+                    a:hover {
+                        background-color: transparent;
+
+                        color: #fff;
                     }
                 }
             }
